@@ -1,0 +1,12 @@
+User-agent: *
+Allow: /
+Disallow: /private/
+
+# Allow search engines to crawl comparison pages
+Allow: /vs-instagram
+Allow: /vs-tiktok
+Allow: /vs-twitter
+Allow: /vs-snapchat
+Allow: /vs-x
+
+Sitemap: https://pictofeed.com/sitemap.xml

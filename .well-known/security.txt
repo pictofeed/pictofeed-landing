@@ -1,0 +1,4 @@
+Contact: security@pictofeed.com
+Expires: 2024-12-31T23:59:59.999Z
+Preferred-Languages: en
+Policy: https://pictofeed.com/security-policy

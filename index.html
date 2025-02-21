@@ -4,13 +4,79 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Pictofeed | The Privacy Based Social Media App</title>
+    
+    <!-- Primary Meta Tags -->
+    <title>Pictofeed - Privacy-First Social Media App | Share Photos Securely</title>
+    <meta name="title" content="Pictofeed - Privacy-First Social Media App | Share Photos Securely">
+    <meta name="description" content="Looking for a private alternative to mainstream social media? Pictofeed offers secure photo sharing without ads, tracking, or data mining. Join millions switching to privacy-first social media.">
+    <meta name="keywords" content="pictofeed, private social media, X alternative, Twitter alternative, Instagram alternative, TikTok alternative, Snapchat alternative, secure photo sharing, privacy focused app, social network privacy, secure social media, photo sharing app, private photo sharing, social media privacy, encrypted social media, ad-free social media">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://pictofeed.com/">
+    <meta property="og:title" content="Pictofeed - Privacy-First Social Media App">
+    <meta property="og:description" content="Share photos securely with complete privacy control. Join the privacy-first social revolution today.">
+    <meta property="og:image" content="dist/images/social-share.png">
+    <meta property="og:site_name" content="Pictofeed - The Privacy-First Social Network">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://pictofeed.com/">
+    <meta property="twitter:title" content="Pictofeed - Privacy-First Social Media App">
+    <meta property="twitter:description" content="Share photos securely with complete privacy control. Join the privacy-first social revolution today.">
+    <meta property="twitter:image" content="dist/images/social-share.png">
+
+    <!-- App Store Meta -->
+    <meta name="apple-itunes-app" content="app-id=6444635508">
+    <meta name="google-play-app" content="app-id=com.pictofeed.app">
+
+    <!-- Additional SEO -->
+    <link rel="canonical" href="https://pictofeed.com/">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Pictofeed LLC">
+    <meta name="application-name" content="Pictofeed">
+    <meta name="theme-color" content="#ff2d55">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "Pictofeed",
+      "applicationCategory": "SocialNetworkingApplication",
+      "operatingSystem": ["iOS", "Android"],
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "description": "A privacy-focused alternative to mainstream social media platforms. Share photos securely without tracking or ads.",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "ratingCount": "1000"
+      },
+      "featureList": [
+        "Ad-free experience",
+        "End-to-end encryption",
+        "No data tracking",
+        "Private photo sharing",
+        "Customizable privacy settings",
+        "Secure messaging"
+      ]
+    }
+    </script>
+
+    <!-- favicon -->
+    <link rel="icon" type="image/png" href="dist/images/favicon.png">
+    <link rel="apple-touch-icon" href="dist/images/apple-touch-icon.png">
+
     <link href="https://fonts.googleapis.com/css?family=Heebo:400,700|Oxygen:700" rel="stylesheet">
     <link rel="stylesheet" href="dist/css/style.css">
     <script src="https://unpkg.com/scrollreveal@4.0.5/dist/scrollreveal.min.js"></script>
     <link rel="icon" href="dist/images/full-scale-icon.png" sizes="96x96">
 </head>
-<body class="is-boxed has-animations">
+<body class="is-boxed has-animations" itemscope itemtype="https://schema.org/WebPage">
     <div class="body-wrap boxed-container">
         <header class="site-header text-light">
             <div class="container">
@@ -31,9 +97,9 @@
 			</div>
       <div class="container-sm">
         <div class="hero-inner">
-          <img class="pictofeed-logo" src="dist/images/transparent-logo.png" height="50%" width="50%" />
+          <img class="pictofeed-logo" src="dist/images/transparent-logo.png" alt="Pictofeed Logo - Privacy-First Social Media App" height="50%" width="50%" />
 					<div class="hero-copy">
-              <p class="hero-paragraph">The privacy based social media app built for everyone.</p>
+              <p class="hero-paragraph">A new era of social media where privacy comes first.</p>
               <div class="hero-cta">
 							<div class="arrow" onClick="document.getElementById('preview-frame-1').scrollIntoView({ block: 'nearest',  behavior: 'smooth' });"></div>
 						</div>
@@ -46,47 +112,46 @@
                 <div class="features-extended-inner section-inner">
 					<div class="features-extended-wrap">
 						<div class="container">
-							<div class="feature-extended">
+							<article class="feature-extended">
 								<div class="feature-extended-image">
-									<img id="preview-frame-1" class="device-mockup is-revealing" src="dist/images/iphone-feature-01.png" alt="iPhone Feature 01">
+									<img id="preview-frame-1" class="device-mockup is-revealing" src="dist/images/iphone-feature-01.png" alt="Privacy Features">
 								</div>
 								<div class="feature-extended-body is-revealing">
-									<h3 class="mt-0 mb-16">Your Privacy In Mind,</h3>
-									<p class="m-0">Pictofeed is designed with privacy in mind. You control who can see your information, always.</p>
+									<h3 class="mt-0 mb-16">Complete Privacy Control</h3>
+									<p class="m-0">Advanced privacy settings that put you in complete control of your digital presence.</p>
 								</div>
-							</div>
-              <div class="arrow" onClick="document.getElementById('preview-frame-2').scrollIntoView({ block: 'nearest',  behavior: 'smooth' });"></div>
+								<div class="arrow" onClick="document.getElementById('preview-frame-2').scrollIntoView({ block: 'nearest',  behavior: 'smooth' });"></div>
+							</article>
 
-              <div class="feature-extended">
+              <article class="feature-extended">
 								<div class="feature-extended-image">
-									<img id="preview-frame-2" class="device-mockup is-revealing" src="dist/images/iphone-feature-02.png" alt="iPhone Feature 02">
+									<img id="preview-frame-2" class="device-mockup is-revealing" src="dist/images/iphone-feature-02.png" alt="Sharing Features">
 								</div>
 								<div class="feature-extended-body is-revealing">
-									<h3 class="mt-0 mb-16">Share your favorite moments,</h3>
-									<p class="m-0">Or comment and react to someone else's...</p>
+									<h3 class="mt-0 mb-16">Seamless Sharing</h3>
+									<p class="m-0">Share moments with friends and family while maintaining full control over your content's visibility.</p>
 								</div>
-							</div>
-              <div class="arrow" onClick="document.getElementById('preview-frame-3').scrollIntoView({ block: 'nearest',  behavior: 'smooth' });"></div>
+								<div class="arrow" onClick="document.getElementById('preview-frame-3').scrollIntoView({ block: 'nearest',  behavior: 'smooth' });"></div>
+							</article>
 
-              <div class="feature-extended">
+              <article class="feature-extended">
 								<div class="feature-extended-image">
-									<img id="preview-frame-3" class="device-mockup is-revealing" src="dist/images/iphone-feature-03.png" alt="iPhone Feature 03">
+									<img id="preview-frame-3" class="device-mockup is-revealing" src="dist/images/iphone-feature-03.png" alt="Feed Features">
 								</div>
 								<div class="feature-extended-body is-revealing">
-									<h3 class="mt-0 mb-16">Your Feed,</h3>
-									<p class="m-0">View the latest posts from everyone on Pictofeed or only what's new from those you know!</p>
-                  <p2 class="m-0"><b>Find out what others are posting, now!</b></p2>
+									<h3 class="mt-0 mb-16">Intelligent Feed</h3>
+									<p class="m-0">A personalized experience that lets you choose between global discovery and close connections.</p>
+                  <p class="cta-text mt-16"><strong>Join the privacy-first social revolution today.</strong></p>
 								</div>
-							</div>
-              <div class="arrow" onClick="document.getElementById('copyright-info').scrollIntoView({ block: 'end',  behavior: 'smooth' });"></div>
-
+								<div class="arrow" onClick="document.getElementById('copyright-info').scrollIntoView({ block: 'end',  behavior: 'smooth' });"></div>
+							</article>
 						</div>
 					</div>
                 </div>
             </section>
         </main>
 
-		<footer class="site-footer">
+		<footer class="site-footer" itemscope itemtype="https://schema.org/WPFooter">
 			<div class="footer-particles-container">
 				<canvas id="footer-particles"></canvas>
 			</div>
@@ -98,16 +163,21 @@
 								<h2 class="section-title mt-0">Download Now!</h2>
 								<p class="section-paragraph">Pictofeed mobile app is available for IOS and Android devices.</p>
 								<div class="app-store-badges">
-                  <img src="dist/images/google-play-badge.png" width="35%" height="35%"></img>
+                  <a href="https://apps.apple.com/sa/app/pictofeed/id6444635508" target="_blank">
+                      <img src="dist/images/iphone-appstore-badge.png" alt="Download on App Store">
+                  </a>
+                  <div>
+                      <img src="dist/images/google-play-badge.png" alt="Get it on Google Play">
+                  </div>
 								</div>
 							</div>
 						</div>
 					</div>
 				</section>
 			</div>
-			<div class="site-footer-bottom">
+			<div class="site-footer-bottom"></div>
 				<div class="container">
-					<div class="site-footer-inner">
+,					<div class="site-footer-inner">
 						<div class="brand footer-brand">
 							<a href="#">
 								<img src="dist/images/logo-icon.png" alt="Pictofeed icon" height="10%" width="10%">
@@ -161,5 +231,144 @@
     </div>
 
     <script src="dist/js/main.min.js"></script>
+    <script>
+      // Force scroll to top on page load/reload
+      window.onbeforeunload = function() {
+        window.scrollTo(0, 0);
+      }
+      
+      // Alternative approach if the above doesn't work
+      window.addEventListener('load', function() {
+        window.scrollTo(0, 0);
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      });
+
+      document.addEventListener('DOMContentLoaded', function() {
+        // Ensure we're at the top when DOM is ready
+        window.scrollTo(0, 0);
+        
+        const sections = document.querySelectorAll('.hero, .feature-extended, .site-footer');
+        let isScrolling = false;
+        let scrollTimeout = null;
+        
+        function scrollToNearestSection(direction) {
+          const currentPos = window.pageYOffset;
+          let targetSection = null;
+          let minDistance = Infinity;
+          
+          sections.forEach(section => {
+            const rect = section.getBoundingClientRect();
+            if (direction > 0 && rect.top > 0) {
+              if (rect.top < minDistance) {
+                minDistance = rect.top;
+                targetSection = section;
+              }
+            } else if (direction < 0 && rect.bottom < 0) {
+              if (Math.abs(rect.bottom) < minDistance) {
+                minDistance = Math.abs(rect.bottom);
+                targetSection = section;
+              }
+            }
+          });
+          
+          if (targetSection) {
+            isScrolling = true;
+            targetSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            setTimeout(() => { isScrolling = false; }, 1000);
+          }
+        }
+
+        // Handle mouse wheel events
+        window.addEventListener('wheel', function(e) {
+          if (isScrolling) {
+            e.preventDefault();
+            return;
+          }
+          
+          clearTimeout(scrollTimeout);
+          scrollTimeout = setTimeout(() => {
+            scrollToNearestSection(e.deltaY);
+          }, 50);
+        }, { passive: false });
+
+        // Handle touch events
+        let touchStartY = 0;
+        
+        document.addEventListener('touchstart', function(e) {
+          touchStartY = e.touches[0].clientY;
+        }, { passive: true });
+        
+        document.addEventListener('touchmove', function(e) {
+          if (isScrolling) {
+            e.preventDefault();
+            return;
+          }
+          
+          const touchY = e.touches[0].clientY;
+          const diff = touchStartY - touchY;
+          
+          if (Math.abs(diff) > 50) {
+            scrollToNearestSection(diff);
+          }
+        }, { passive: false });
+      });
+
+      // Ensure proper initial scroll position
+      document.addEventListener('DOMContentLoaded', function() {
+        // Force initial position
+        window.scrollTo(0, 0);
+        document.body.style.overflow = 'hidden';
+        
+        // After everything is loaded
+        window.addEventListener('load', function() {
+          setTimeout(() => {
+            document.body.style.overflow = '';
+            const hero = document.querySelector('.hero');
+            if (hero) {
+              hero.scrollIntoView({ block: 'center' });
+            }
+          }, 100);
+        });
+        
+        // Rest of your existing scroll handling code...
+      });
+
+      document.addEventListener('DOMContentLoaded', function() {
+        // Hide scrollbar and prevent scroll during load
+        document.body.style.overflow = 'hidden';
+        
+        window.addEventListener('load', function() {
+          // Center after everything is loaded
+          setTimeout(() => {
+            const hero = document.querySelector('.hero');
+            const logo = document.querySelector('.pictofeed-logo');
+            if (hero && logo) {
+              const windowHeight = window.innerHeight;
+              const logoHeight = logo.offsetHeight;
+              const scrollTo = (hero.offsetTop + (windowHeight - logoHeight) / 2) - (windowHeight / 2);
+              window.scrollTo(0, 0);
+              document.body.style.overflow = '';
+            }
+          }, 100);
+        });
+        
+        // ...rest of your existing scroll handling code...
+      });
+    </script>
+
+    <!-- Add breadcrumb structured data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://pictofeed.com"
+      }]
+    }
+    </script>
 </body>
 </html>

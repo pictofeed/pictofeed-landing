@@ -1,0 +1,13 @@
+/* TEAM */
+    Privacy Advocate: Pictofeed Team
+    Contact: hello@pictofeed.com
+    From: Global
+
+/* THANKS */
+    Privacy-conscious users who choose Pictofeed
+
+/* SITE */
+    Language: English
+    Standards: HTML5, CSS3
+    Components: ScrollReveal, Service Workers
+    IDE: VS Code
