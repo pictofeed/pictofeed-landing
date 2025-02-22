@@ -41,24 +41,12 @@ body::before {
 
 /* Premium Header */
 .site-header {
-  background: linear-gradient(
-    to bottom,
-    rgba(21, 12, 14, 0.98) 0%,
-    rgba(21, 12, 14, 0.95) 50%,
-    rgba(21, 12, 14, 0.92) 100%
-  );
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.15);
+  background: transparent;
   position: fixed;
   width: 100%;
   z-index: 1000;
   padding: 1.25rem 0;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.07);
-  background: transparent;
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  border-bottom: none;
 }
 
 /* Hero Section */
@@ -633,6 +621,8 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
   scroll-snap-align: start;
   gap: 64px;  /* Add gap between image and text */
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .feature-extended + .feature-extended {
@@ -661,14 +651,19 @@ h1, h2, h3, h4, h5, h6 {
   flex: 0 0 auto;  /* Prevent image from stretching */
   width: 440px;
   margin: 0;  /* Reset margins */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .feature-extended-body {
-  flex: 0 0 360px;  /* Fixed width for text */
-  text-align: left;  /* Left align text */
-  margin: 0;  /* Reset margins */
-  position: relative;  /* For arrow positioning */
-  padding-bottom: 48px;  /* Make space for arrow */
+  flex: 0 0 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 20px 48px 20px;
 }
 
 .feature-extended .arrow {
@@ -702,10 +697,90 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   .feature-extended-body {
-    flex: 0 0 auto;
     width: 100%;
-    text-align: center;
-    padding-bottom: 48px;
+    max-width: 400px;
+  }
+}
+
+/* ...existing code... */
+
+.scroll-prompt {
+  position: absolute;
+  bottom: 80px; /* Position above arrow */
+  left: 50%;
+  transform: translateX(-50%);
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 0.9rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  animation: fadeInOut 2s ease-in-out infinite;
+  pointer-events: none;
+}
+
+@keyframes fadeInOut {
+  0%, 100% { opacity: 0.3; transform: translateX(-50%) translateY(0); }
+  50% { opacity: 1; transform: translateX(-50%) translateY(-5px); }
+}
+
+/* Adjust arrow margin to accommodate prompt */
+.arrow {
+  /* ...existing arrow styles... */
+  margin-bottom: 200px;
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+  .scroll-prompt {
+    bottom: 60px;
+    font-size: 0.8rem;
+  }
+}
+
+/* ...existing code... */
+
+.hero-scroll-prompt {
+    position: relative;
+    bottom: 2px;
+    left: 90px;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 0.9rem;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    white-space: nowrap;
+    animation: fadeInOut 2s ease-in-out infinite;
+    pointer-events: none;
+    margin-bottom: 2px;
+}
+
+.hero-cta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ...existing code... */
+
+.feature-extended {
+  /* ...existing feature-extended styles... */
+  justify-content: center !important; /* Force center alignment for all features */
+}
+
+/* Override the justify-content for all feature-extended elements */
+@media (min-width: 641px) {
+  .feature-extended {
+    justify-content: center !important;
+    gap: 64px;
+  }
+  
+  .feature-extended .feature-extended-image {
+    margin-right: 0 !important;  /* Remove default right margin */
+    margin-left: 0 !important;   /* Remove default left margin */
+  }
+
+  .feature-extended:nth-child(even) .feature-extended-image {
+    margin-left: 0 !important;   /* Remove margin for even numbered features */
   }
 }
 
