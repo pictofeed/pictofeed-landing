@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Support - Pictofeed</title>
+    <meta name="description" content="Get help and support for your Pictofeed account">
+    
+    <link href="https://fonts.googleapis.com/css?family=Heebo:400,700|Oxygen:700" rel="stylesheet">
+    <link rel="stylesheet" href="dist/css/style.css">
+    <script src="https://unpkg.com/scrollreveal@4.0.5/dist/scrollreveal.min.js"></script>
+    <link rel="icon" href="dist/images/full-scale-icon.png" sizes="96x96">
+
+    <style>
+        .container-sm {
+            max-width: 100%;
+            padding: 0 24px;
+        }
+
+        .support-panel {
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(20px) saturate(180%);
+            -webkit-backdrop-filter: blur(20px) saturate(180%);
+            border-radius: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            box-shadow: 
+                0 8px 32px 0 rgba(0, 0, 0, 0.2),
+                inset 0 0 0 1px rgba(255, 255, 255, 0.1);
+            width: 100%;
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 48px;
+            position: relative;
+            z-index: 10;
+        }
+
+        .support-form {
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 11;
+            padding: 0 20px;
+        }
+
+        @media (max-width: 640px) {
+            .container-sm {
+                padding: 0 16px;
+            }
+
+            .support-panel {
+                padding: 24px;
+                margin: 20px auto;
+            }
+
+            .support-form {
+                padding: 0;
+            }
+        }
+
+        .form-group {
+            margin-bottom: 24px;
+            position: relative;
+            z-index: 12;
+        }
+
+        .form-label {
+            display: block;
+            margin-bottom: 12px;
+            color: #fff;
+            font-weight: 500;
+            font-size: 16px;
+            letter-spacing: 0.5px;
+            text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-input {
+            width: 100%;
+            padding: 16px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 8px;
+            background: rgba(255, 255, 255, 0.1);
+            color: #fff;
+            font-size: 16px;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(5px);
+            -webkit-backdrop-filter: blur(5px);
+            position: relative;
+            z-index: 13;
+        }
+
+        .form-input::placeholder {
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+        .form-textarea {
+            min-height: 150px;
+            resize: vertical;
+        }
+
+        .form-input:hover {
+            border-color: rgba(255, 255, 255, 0.4);
+            background: rgba(255, 255, 255, 0.15);
+        }
+
+        .form-input:focus {
+            outline: none;
+            border-color: #ff2d55;
+            background: rgba(255, 255, 255, 0.2);
+            box-shadow: 
+                0 0 0 3px rgba(255, 45, 85, 0.2),
+                0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-submit {
+            background: #ff2d55;
+            color: #fff;
+            padding: 16px 32px;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            width: 100%;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            position: relative;
+            z-index: 13;
+            box-shadow: 0 4px 12px rgba(255, 45, 85, 0.2);
+        }
+
+        .form-submit:hover {
+            background: #ff1a45;
+            transform: translateY(-1px);
+            box-shadow: 
+                0 6px 16px rgba(255, 45, 85, 0.3),
+                0 2px 4px rgba(255, 45, 85, 0.1);
+        }
+
+        .form-submit:active {
+            transform: translateY(0);
+            box-shadow: 0 2px 8px rgba(255, 45, 85, 0.2);
+        }
+
+        .form-message {
+            display: none;
+            margin-top: 20px;
+            padding: 16px;
+            border-radius: 8px;
+            text-align: center;
+            font-weight: 500;
+        }
+
+        .form-message.success {
+            display: block;
+            background: rgba(39, 174, 96, 0.1);
+            color: #2ecc71;
+            border: 1px solid rgba(46, 204, 113, 0.2);
+        }
+
+        .form-message.error {
+            display: block;
+            background: rgba(231, 76, 60, 0.1);
+            color: #e74c3c;
+            border: 1px solid rgba(231, 76, 60, 0.2);
+        }
+
+        .hero-inner {
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero-particles-container {
+            z-index: 0;
+        }
+    </style>
+</head>
+<body class="is-boxed has-animations">
+    <div class="body-wrap boxed-container">
+        <header class="site-header text-light">
+            <div class="container">
+                <div class="site-header-inner">
+                    <div class="brand header-brand">
+                        <h1 class="m-0">
+                            <a href="index.html">
+                                <img src="dist/images/logo-icon.png" alt="Pictofeed" width="32" height="32">
+                            </a>
+                        </h1>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <section class="hero text-center text-light">
+                <div class="hero-bg"></div>
+                <div class="hero-particles-container">
+                    <canvas id="hero-particles"></canvas>
+                </div>
+                <div class="container-sm">
+                    <div class="hero-inner">
+                        <h1 class="hero-title mt-0 is-revealing">Support</h1>
+                        <p class="hero-paragraph is-revealing">Need help? We're here to assist you.</p>
+                        
+                        <div class="support-panel">
+                            <div class="support-form">
+                                <form id="supportForm" onsubmit="return handleSubmit(event)">
+                                    <div class="form-group">
+                                        <label for="email" class="form-label">Email Address</label>
+                                        <input type="email" id="email" name="email" class="form-input" required 
+                                               placeholder="Enter your email address">
+                                    </div>
+                                    
+                                    <div class="form-group">
+                                        <label for="subject" class="form-label">Subject</label>
+                                        <input type="text" id="subject" name="subject" class="form-input" required 
+                                               placeholder="What's your inquiry about?">
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="message" class="form-label">Message</label>
+                                        <textarea id="message" name="message" class="form-input form-textarea" required 
+                                                  placeholder="Please describe your issue or question..."></textarea>
+                                    </div>
+
+                                    <button type="submit" class="form-submit">Send Message</button>
+                                    <div id="formMessage" class="form-message"></div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="site-footer">
+            <div class="footer-particles-container">
+                <canvas id="footer-particles"></canvas>
+            </div>
+            <div class="site-footer-bottom">
+                <div class="container">
+                    <div class="site-footer-inner">
+                        <div class="brand footer-brand">
+                            <a href="index.html">
+                                <img src="dist/images/logo-icon.png" alt="Pictofeed" width="32" height="32">
+                            </a>
+                        </div>
+                        <ul class="footer-links list-reset">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="#">About us</a></li>
+                            <li><a href="#">FAQ's</a></li>
+                        </ul>
+                        <div class="footer-copyright">&copy; 2025 Pictofeed LLC, All rights reserved</div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="dist/js/main.min.js"></script>
+    <script>
+        function handleSubmit(event) {
+            event.preventDefault();
+            
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+            const formMessage = document.getElementById('formMessage');
+            
+            // Basic validation
+            if (!email || !message) {
+                formMessage.textContent = 'Please fill in all fields';
+                formMessage.className = 'form-message error';
+                return false;
+            }
+
+            // Prepare email data
+            const mailtoLink = `mailto:support@pictofeed.io?subject=Support Request from ${email}&body=${encodeURIComponent(message)}`;
+            
+            // Open default email client
+            window.location.href = mailtoLink;
+            
+            // Show success message
+            formMessage.textContent = 'Opening your email client...';
+            formMessage.className = 'form-message success';
+            
+            // Reset form
+            document.getElementById('supportForm').reset();
+            
+            return false;
+        }
+    </script>
+</body>
+</html>
